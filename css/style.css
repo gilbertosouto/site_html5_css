@@ -17,18 +17,18 @@ body{
 /*.clearfixbody usado para adicionar um espaço vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
 */
-.clearfixbody:before, .clearfixbody:after {
+.clearfixbody:before, .clearfixbody:after{
     content: " "; 
     display: table; 
 }
-.clearfixbody:after {
+.clearfixbody:after{
     clear: both;
 }
-.clearfixbody {
+.clearfixbody{
     *zoom: 1;
 }
 /*fim do clearfix*/
-img, picture, video, embed {
+img, picture, video, embed{
     max-width: 100%; /*define a largura maxima em ate 100%*/
 }
 h1, h2{
@@ -124,7 +124,7 @@ nav{
 		letter-spacing: -0.0333333333em; /* -2px a 60px = 0.0333333333em */
 		line-height: 1em; /* 60px a 60px = 1em */
 	}
-	.chamada h3 {
+.chamada h3{
 		margin: 0 auto;
 		width:75%; /* 900px a 1200px = 0.75 x 100 = 75%*/
 	}
@@ -145,7 +145,7 @@ nav{
 		
 	
 }
-..desktop, .tablet{
+.desktop, .tablet{
 	margin-right: 2.631578947368421%;
 }
 .desktop{
@@ -222,3 +222,77 @@ footer{
 .desenvolvedor figure{
 	width:100%;
 }
+
+@media screem and (max-width: 999px){
+	h2, a , a:link, a:visited {
+		color:f9ad0f;
+	}
+	
+	header{
+		height: 195px;
+		text-align: center
+	}
+	header h1 a {
+		background-position: 57% 0;
+		height: 126px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+		
+	nav{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	nav a.ativo:link, nav a: hover{
+		color: #228b22;
+	}
+	.chamada{
+		height: 200px;
+	}
+	h2{
+		font-size: 2.2222222222em;
+	}
+	.chamada h3{
+		font-size: 1.11111111em;
+	}
+	.meio{
+		background-color:#228b22;
+		height:400px;
+		padding: 3.90625%;
+		width: 92.1875%;
+	}
+	.desktop, .tablet, .mobile{
+		width: 31.25%;
+		height:350px;
+	}
+	.meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
+		width: 62.25%
+	}
+	.meio img{
+		height:80px
+	}
+	.meio h3{
+		font-size: 1.6666666667em;
+	}
+	.meio p{
+		font-size: 0.7777777778em;
+		height: 160px;
+		line-height: 1.1428571428em;
+		padding: 2.91666666667%;
+		top: 215px;
+	}
+	span.botao {
+		font-size: 1.11111111111em;
+		letter-spacing: -0.1em;
+		height:22px;
+		margin-top: 25px;
+		position: absolute;
+		width: 50%;
+	}
+	span.botao a{
+		padding: 2px 3.33333333333333%;
+	}
+}
+	
+	
